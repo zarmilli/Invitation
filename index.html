@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>You've Been Invited</title>
+
+  <!-- Open Graph / WhatsApp Preview -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="You've Been Invited 🖤" />
+  <meta property="og:description" content="Join us for an evening of elegance. Tap to see your invitation." />
+  <meta property="og:image"       content="https://zarmilli.github.io/Invitation/og-preview.jpg" />
+  <!-- Replace og:url with your actual hosted URL -->
+  <meta property="og:url"         content="https://zarmilli.github.io/Invitation" />
+  <meta name="theme-color"        content="#000000" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Libre+Bodoni:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════
+       SPLASH SCREEN
+  ══════════════════════════════════════════ -->
+  <div id="splash">
+    <div class="splash-inner">
+      <p class="splash-eyebrow">— an intimate gathering —</p>
+      <h1 class="splash-title">You've Been<br /><em>Invited</em></h1>
+      <button id="enter-btn" aria-label="Enter the invitation">
+        <span class="btn-text">Tap to Enter</span>
+        <span class="glitter-sweep" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       MAIN SITE (hidden until splash dismissed)
+  ══════════════════════════════════════════ -->
+  <main id="main-site" aria-hidden="true">
+
+    <!-- NAVBAR -->
+    <nav id="navbar">
+      <span class="nav-logo">Thube's 21st</span>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero" class="section-hero">
+
+      <!-- Video Background -->
+      <video
+        class="hero-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+        poster="assets/hero-poster.jpg"
+      >
+        <source src="assets/hero.mp4" type="video/mp4" />
+      </video>
+
+      <!-- Black overlay -->
+      <div class="hero-overlay"></div>
+
+      <!-- Content -->
+      <div class="hero-content fade-in-block">
+        <h2 class="hero-title">
+          Celebrate Thube's 21st<br />
+          <em>& graduation with us</em>
+        </h2>
+        <p class="hero-eyebrow-below">— scroll to see details —</p>
+      </div>
+
+    </section>
+
+    <!-- INTRO SECTION -->
+    <section id="intro" class="section-intro">
+
+      <div class="intro-inner">
+
+        <p class="intro-eyebrow fade-in-block">— an affluent occasion —</p>
+
+        <h2 class="intro-title fade-in-block">
+          The Zulu Family<br />
+          <em>requests your presence</em>
+        </h2>
+
+        <div class="intro-divider fade-in-block">
+          <span></span>
+        </div>
+
+        <p class="intro-body fade-in-block">
+          With hearts full of pride and gratitude, the Zulu family cordially extends 
+          this invitation to you, a cherished guest, to join us in celebrating 
+          a milestone of extraordinary significance.
+        </p>
+
+        <p class="intro-body fade-in-block">
+          Our son, Thubelihle "Mlu" Zulu, has distinguished himself with academic excellence, 
+          earning his degree, and in the same breath, he steps gracefully into 
+          the fullness of 21 years. Two triumphs. One unforgettable evening, and you are invited to celebrate with us.
+        </p>
+
+        <p class="intro-body intro-body--closing fade-in-block">
+          Every detail of this occasion has been curated with meticulous craftsmanship and deliberate intention, 
+          for nothing short of perfection will do when honouring a man of his 
+          character.
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- THEME SECTION -->
+    <section id="theme" class="section-theme">
+
+      <div class="theme-overlay"></div>
+
+      <div class="theme-bg" id="theme-bg"></div>
+
+      <div class="theme-content fade-in-block">
+        <p class="theme-eyebrow">Equestrian Old Money</p>
+        <h2 class="theme-title">Theme<br /><em>of the Day</em></h2>
+        <div class="theme-divider"><span></span></div>
+        <p class="theme-body">
+          Old money is not a display — it is a disposition. It is the quiet 
+          confidence of generations who have never needed to announce their 
+          worth, for it speaks through the cut of their cloth, the 
+          unhurried cadence of their speech, and the spaces they choose to 
+          inhabit. It is heirlooms over labels, restraint over excess, and 
+          the enduring elegance of a life built not in a moment, but across 
+          lifetimes. This evening, we do not dress to impress — we dress 
+          to honour a tradition of grace.
+        </p>
+      </div>
+
+    </section>
+
+    <!-- COLOR SECTION -->
+    <section id="color" class="section-color">
+
+      <div class="color-content fade-in-block">
+        <p class="color-eyebrow">White or Off-White</p>
+        <h2 class="color-title">Color<br /><em>of the Day</em></h2>
+        <div class="color-divider"><span></span></div>
+      </div>
+
+      <!-- Gentlemen -->
+      <div class="color-label fade-in-block">
+        <p>References for Gentlemen</p>
+      </div>
+
+      <div class="color-grid fade-in-block">
+        <div class="color-grid-item">
+          <img src="assets/men-1.jpg" alt="Gentlemen reference 1" loading="lazy" />
+        </div>
+        <div class="color-grid-item">
+          <img src="assets/men-2.jpg" alt="Gentlemen reference 2" loading="lazy" />
+        </div>
+        <div class="color-grid-item">
+          <img src="assets/men-3.jpg" alt="Gentlemen reference 3" loading="lazy" />
+        </div>
+        <div class="color-grid-item">
+          <img src="assets/men-4.jpg" alt="Gentlemen reference 4" loading="lazy" />
+        </div>
+        <div class="color-grid-item">
+          <img src="assets/men-5.jpg" alt="Gentlemen reference 5" loading="lazy" />
+        </div>
+        <div class="color-grid-item">
+          <img src="assets/men-6.jpg" alt="Gentlemen reference 6" loading="lazy" />
+        </div>
+      </div>
+
+      <!-- Ladies -->
+      <div class="color-label fade-in-block">
+        <p>References for Ladies</p>
+      </div>
+
+      <div class="color-grid fade-in-block">
+        <div class="color-grid-item">
+          <img src="assets/ladies-1.jpg" alt="Ladies reference 1" loading="lazy" />
+        </div>
+        <div class="color-grid-item">
+          <img src="assets/ladies-2.jpg" alt="Ladies reference 2" loading="lazy" />
+        </div>
+        <div class="color-grid-item">
+          <img src="assets/ladies-3.jpg" alt="Ladies reference 3" loading="lazy" />
+        </div>
+        <div class="color-grid-item">
+          <img src="assets/ladies-4.jpg" alt="Ladies reference 4" loading="lazy" />
+        </div>
+        <div class="color-grid-item">
+          <img src="assets/ladies-5.jpg" alt="Ladies reference 5" loading="lazy" />
+        </div>
+        <div class="color-grid-item">
+          <img src="assets/ladies-6.jpg" alt="Ladies reference 6" loading="lazy" />
+        </div>
+      </div>
+
+    </section>
+
+    <!-- DISCLAIMER SECTION -->
+    <section id="disclaimer" class="section-disclaimer">
+
+      <div class="disclaimer-inner">
+
+        <h2 class="disclaimer-title fade-in-block">Please<br /><em>Note</em></h2>
+
+        <div class="disclaimer-divider fade-in-block"><span></span></div>
+
+        <p class="disclaimer-warning fade-in-block">
+          Failure to comply to the color of the day will result 
+          in no access to the tent.
+        </p>
+
+        <p class="disclaimer-strictly fade-in-block">Strictly</p>
+
+        <ul class="disclaimer-list">
+          <li class="disclaimer-item fade-in-block">
+            <span class="item-number">01</span>
+            <span class="item-text">No flashy logos, brands, or monograms</span>
+          </li>
+          <li class="disclaimer-item fade-in-block">
+            <span class="item-number">02</span>
+            <span class="item-text">LV, Gucci, and Prada are prohibited — these are not in the spirit of the evening</span>
+          </li>
+        </ul>
+
+      </div>
+
+      <!-- Image banner — full bleed, after item 02 -->
+      <div class="disclaimer-banner fade-in-block">
+        <div class="banner-item">
+          <img src="assets/banner-1.jpg" alt="" loading="lazy" />
+        </div>
+        <div class="banner-item">
+          <img src="assets//banner-2.jpg" alt="" loading="lazy" />
+        </div>
+        <div class="banner-item">
+          <img src="assets//banner-3.jpg" alt="" loading="lazy" />
+        </div>
+      </div>
+
+      <div class="disclaimer-inner">
+        <ul class="disclaimer-list disclaimer-list--continued">
+          <li class="disclaimer-item fade-in-block">
+            <span class="item-number">03</span>
+            <span class="item-text">No miniskirts</span>
+          </li>
+          <li class="disclaimer-item fade-in-block">
+            <span class="item-number">04</span>
+            <span class="item-text">No visible tattoos</span>
+          </li>
+          <li class="disclaimer-item fade-in-block">
+            <span class="item-number">05</span>
+            <span class="item-text">No weapons or firearms</span>
+          </li>
+          <li class="disclaimer-item fade-in-block">
+            <span class="item-number">06</span>
+            <span class="item-text">No unethical behaviour or misconduct that could disrupt the event</span>
+          </li>
+        </ul>
+      </div>
+
+    </section>
+
+    <!-- DETAILS SECTION -->
+    <section id="details" class="section-details">
+
+      <div class="details-inner">
+
+        <p class="details-eyebrow fade-in-block">— you are cordially invited —</p>
+
+        <h2 class="details-title fade-in-block">
+          The<br /><em>Details</em>
+        </h2>
+
+        <div class="details-divider fade-in-block"><span></span></div>
+
+        <!-- Detail rows -->
+        <div class="details-grid">
+
+          <div class="detail-row fade-in-block">
+            <span class="detail-label">Date</span>
+            <span class="detail-rule"></span>
+            <span class="detail-value">9 August 2026</span>
+          </div>
+
+          <div class="detail-row fade-in-block">
+            <span class="detail-label">Time</span>
+            <span class="detail-rule"></span>
+            <span class="detail-value">10:00</span>
+          </div>
+
+          <div class="detail-row fade-in-block">
+            <span class="detail-label">Location</span>
+            <span class="detail-rule"></span>
+            <span class="detail-value">Zulu Homestead,<br />eNgonyameni</span>
+          </div>
+
+        </div>
+
+        <!-- Venue note -->
+        <p class="details-note fade-in-block">
+          The precise coordinates of the venue will be shared exclusively 
+          with guests who have confirmed their attendance.
+        </p>
+
+        <!-- RSVP button -->
+        
+          href="YOUR_RSVP_LINK_HERE"
+          class="rsvp-btn fade-in-block"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="rsvp-btn-text">Confirm Attendance</span>
+          <span class="glitter-sweep" aria-hidden="true"></span>
+        </a>
+
+        <!-- Gold closing line -->
+        <h3 class="details-closing fade-in-block">
+          It would be our<br /><em>greatest honour</em><br />to have you with us.
+        </h3>
+
+      </div>
+
+    </section>
+  </main>
+
+  <!-- Audio — src will be set once you upload your track -->
+  <audio id="bg-audio" loop preload="none">
+    <source src="assets/background.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
