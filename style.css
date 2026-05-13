@@ -968,7 +968,12 @@ body {
 /* ── RSVP Button ── */
 /* Inherits the glitter-sweep span from the splash button.
    We reuse the same pattern but invert for a gold-on-dark feel. */
-.rsvp-btn {
+.rsvp-wrapper {
+  transition-delay: 0.84s;
+  margin-bottom: 7rem;
+}
+
+   .rsvp-btn {
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -978,7 +983,7 @@ body {
   overflow: hidden;
   border: 1px solid rgba(201, 185, 122, 0.45);
   cursor: pointer;
-  margin-bottom: 7rem;
+  margin-bottom: 0;
   transition-delay: 0.84s;
 
   /* Gold-tinted dark background */
